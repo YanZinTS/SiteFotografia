@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pragati+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor-topo: #1C0F37;
+    --cor-corpo: #2a6eae6d;
+    --cor-branca: white;
+    --cor-rodape: #4B7DAB;
+
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    transition: all  0.2s;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+#cabecalho{
+    background-color: var(--cor-topo);
+    /* display flex deixa em linha, space-between ajusta a linha e o aling itens centraliza*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    color: white;
+}
+
+#cabecalho h1{
+    font-style: italic;
+}
+
+#cabecalho figure img{
+    background-color: white;
+    border-radius: 180px;
+    width: 50%;
+}
+
+#cabecalho nav a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    padding: 0.8rem;
+    border-radius: 15px;
+    background-color: var(--cor-corpo);
+    margin: 0.5rem;
+}
+
+#cabecalho nav a:hover{ /*hover faz executar quando o mouse passar em cima*/
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 15px;
+}
+
+#corpo #banner{
+    background-color: rgb(34, 96, 135);
+    height: calc(100vh - 93px); /*usar pra deixar 100% sem estourar tudo*/
+    display: flex;
+    flex-direction: column; /*mudar a direção do flex para sem em coluna*/
+    align-items: center; /*coloca o conteudo no centro*/
+    justify-content: center; /*coloca o conteudo no centro tambem*/
+    background-image: url(/assets/img/imagemfundo2.jpg);
+    background-repeat: no-repeat; /*imagem não repete*/
+    background-size: cover; /*fundo preenche toda a área*/
+    background-position: center center;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#corpo #banner h1{
+    margin-bottom: 1rem;
+    font-size: 28pt;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#corpo #imagens{
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+#corpo #imagens img{
+    width: calc((100% - 2rem) - 6px);
+    padding: 1rem;
+    align-items: center;
+    border: double;
+    text-align: center;
+}
+
+#quem{
+    display: flex;
+    background-color: var(--cor-topo);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#quem img{
+    background-color: white;
+    border-radius: 10px;
+    width: 100% auto;
+}
+
+#quem #text h2{
+    margin-bottom: 1rem;
+}
+
+#img{
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+#img img{
+    width: calc((100% - 2rem) - 6px);
+    padding: 1rem;
+    align-items: center;
+    border: double;
+    text-align: center;
+}
+
+#contato{
+    color: white;
+    background-color: rgb(18, 43, 92);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+#contato h3{
+    font-size: 15pt;
+}
+
+#contato label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato input{
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+    padding: 7px;
+}
+
+#contato div{
+    padding: 0.4rem;
+}
+
+#contato button{
+    width: auto;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#enviar{
+    font-size: 11pt;
+}
+
+#contato #enviar:hover{ /*hover faz executar quando o mouse passar em cima*/
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 15px;
+}
+
+.umpor {
+    max-width: 512px;
+}
